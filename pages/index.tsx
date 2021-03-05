@@ -3,11 +3,19 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
+import Date from '../components/date';
 import { GetStaticProps } from 'next';
 
-import Date from '../components/date';
+export default function Home({
+  allPostsData,
+}: {
+  allPostsData: {
+    date: string;
+    title: string;
 
-export default function Home({ allPostsData }) {
+    id: string;
+  }[];
+}) {
   return (
     <Layout home>
       <Head>
@@ -38,6 +46,7 @@ export default function Home({ allPostsData }) {
     </Layout>
   );
 }
+
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData();
   return {

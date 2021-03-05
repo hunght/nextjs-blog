@@ -17,6 +17,10 @@ export default function Post({
   return (
     <Layout>
       <Head>
+
+
+
+
         <title>{postData.title}</title>
       </Head>
       <article>

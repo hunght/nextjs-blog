@@ -69,6 +69,6 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     //Important rules
     "max-lines-per-function": ["error", 60],
-    "max-lines": ["error", 60]
+    "max-lines": ["error", 20]
   },
 };

@@ -67,6 +67,9 @@ module.exports = {
     'import/prefer-default-export': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-var-requires': 'off',
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    //Important rules
+    "max-lines-per-function": ["error", 60],
+    "max-lines": ["error", 60]
   },
 };
